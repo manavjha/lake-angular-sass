@@ -1,0 +1,448 @@
+<div class='page'>
+  <div class='leftNav'>
+    <div side-nav>
+      <div collapsed="false">
+        <div class="title">
+          <img alt="kpmg logo" class="dark-logo" src="assets/images/lakehouse-logo.svg" />
+          <div>
+            <img alt="kpmg logo" class="dark-logo" src="assets/images/kpmg-logo.svg" />
+            <span>Lakehouse</span>
+          </div>
+        </div>
+        <div>
+          <div main>
+            <ul>
+              <li>
+                <a routerLink="/admin/dashboard" routerLinkActive="active">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">local_library</i>
+                  <span>Programs</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/admin/participants" routerLinkActive="active">
+                  <i class="material-icons">group</i>
+                  <span>Participants</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">poll</i>
+                  <span>Reporting</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">settings</i>
+                  <span>Settings</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div collapsed="true">
+        <div class="title">
+          <label>Settings</label>
+          <button mat-button><i class="material-icons">close</i></button>
+        </div>
+        <div>
+          <div sub>
+            <ul>
+              <li>
+                <a routerLink="/admin/programs" routerLinkActive="active">Programs Dashboard</a>
+                <span>Upcoming Programs</span>
+              </li>
+              <li>
+                <span class="active">Innovative Creative Leaning</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>Business Enterprise Training</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>SAU Live</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+            </ul>
+            <!-- 
+                        <ul>
+                            <li><a routerLink="/admin/reporting" routerLinkActive="active">Reporting Dashboard</a></li>
+                            <li><a>Event Dashboard</a></li>
+                            <li><a>Flights</a></li>
+                            <li><a>Hotels</a></li>
+                            <li><a>Class Attendance</a></li>
+                            <li><a>Classroom Assignments</a></li>
+                            <li><a>Wellbeing Check</a></li>
+                        </ul> 
+                        -->
+            <!-- <ul>
+                            <li><a routerLink="/admin/settings" routerLinkActive="active">Settings Home</a></li>
+                            <li><a>User Access</a></li>
+                            <li><a>Notifications</a></li>
+                            <li><a>Global Mobile Settings</a></li>
+                            <li><a>Content Management</a></li>
+                        </ul> -->
+          </div>
+        </div>
+      </div>
+      <div program>
+        <div container>
+          <div lists>
+            <span>Program Details</span>
+            <span>User Access</span>
+            <span>Content Management</span>
+            <span>Notifications</span>
+            <span>Settings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='center'>
+    <!-- 
+            add page header, dashboard summary, dashboard list here
+        -->
+    <div header>
+      <div breadcrums>
+        <ol class="Breadcrumb">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Dashboard
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Settings
+            </a>
+          </li>
+          <li class="Breadcrumb-item active">
+            <a class="Breadcrumb-link active" href="">
+              Innovative Creative Learning (11/04/19 - 11/08/19)
+            </a>
+          </li>
+          <div parent-div>
+            <div breadcrum-popup open="true">
+              <span><a href="" class="disable">Innovative Creative Learning (11/04/19 - 11/08/19)</a></span>
+              <span><a href="">Business Enterprise Training (11/06/19 - 11/09/19)</a></span>
+              <span><a href="">SAU Live (11/11/19 - 11/15/19)</a></span>
+              <span><a href="">Partner Meeting (11/16/19 - 11/17/19)</a></span>
+            </div>
+          </div>
+        </ol>
+      </div>
+      <span class="spacer"></span>
+      <div class="user-group">
+        <span><i class="material-icons">search</i></span>
+        <span><i class="material-icons"> notifications </i><span></span></span>
+        <!-- <span><i class="material-icons">person_pin</i></span>-->
+        <span class="x"><span class="y"><span>MJ</span></span></span>
+        <span class="user">Marley Jones</span>
+        <span class="caret"></span>
+      </div>
+    </div>
+    <!--Tab Control-->
+    <div creative-learning>
+      <h1>Programs</h1>
+    </div>
+    <div overview-create>
+      <div class="tab-body">
+
+        <div program-setting>
+          <!-- After Mat tab group -->
+          <div>
+            <div program-list>
+              <div head mode="close">
+
+                <!--    Initially hidden Section     -->
+                <div left>
+                  <input type="text" placeholder="Search programs">
+                  <span spacer></span>
+                  <span><i class="material-icons">search</i></span>
+                </div>
+                <div right>
+                  <span><i class="material-icons">settings</i></span>
+                  <span>Program Settings Mode</span>
+                  <section cancel-msg>
+                    <div>
+                      <span>Are you sure you want to cancel and lose changes?</span>
+                      <article>
+                        <button>Cancel</button>
+                        <button>Keep Editing</button>
+                      </article>
+                    </div>
+                  </section>
+                  <figure>
+                    <button cancel>Cancel</button>
+                    <button save>Save</button>
+                  </figure>
+
+                  <span><i class="material-icons">clear</i></span>
+                </div>
+                <!--    Initially hidden Section     -->
+
+                <span><i class="material-icons">local_library</i></span>
+                <div>Your Programs </div>
+                <div right-head>
+                  <form search>
+                    <input type="text" name="search" value="" placeholder="Search Programs">
+                  </form>
+                  <span><i class="material-icons"> search</i></span>
+                  <span><i class="material-icons"> sort </i></span>
+                </div>
+                <div close class="undo">
+                  <button>Undo</button>
+                  <span save>Save successfully</span>
+                  <span><i class="material-icons"> check_circle_outline</i></span>
+                  <span><i class="material-icons"> navigate_before</i></span>
+                  <span><i class="material-icons"> settings </i></span>
+                </div>
+              </div>
+
+              <table mode="edit">
+                <thead>
+                  <th class="edit">
+                    <span> Name</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                  </th>
+                  <th class="view">
+                    <div>
+                      <div>
+                        <span>Program Name</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="edit">
+                    <span>Date</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                  </th>
+                  <th class="edit">
+                    <span>Events</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                  </th>
+                  <th class="edit">
+                    <span>Attendees</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                  </th>
+                  <th class="last-view">
+                    <div>
+                      <div>
+                        <span>
+                          <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                        </span>
+                        <span>Course Registration URL</span>
+                      </div>
+                      <div dwell>
+                        <span>
+                          <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                        </span>
+                        <span>Cvent Registration URL</span>
+
+                      </div>
+                    </div>
+                  </th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="edit">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                        <span>Learning</span>
+                      </div>
+                    </td>
+                    <td class="view">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                      </div>
+                    </td>
+                    <td class="default">
+                      <div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin " color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <span></span>
+                        <div>
+                          <span>11/04/19 - 11/08/19</span>
+                          <span>5 days</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>50</span><span>Classes</span></div>
+                        <div><span>24</span><span>Events</span></div>
+                        <div><span>36</span><span>House</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>321</span><span>Participants</span></div>
+                        <div><span>65</span><span>Facilitators</span></div>
+                        <div><span>29</span><span>Speakers</span></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="edit">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                        <span>Learning</span>
+                      </div>
+                    </td>
+                    <td class="view">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                      </div>
+                    </td>
+                    <td class="default">
+                      <div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <span></span>
+                        <div>
+                          <span>11/04/19 - 11/08/19</span>
+                          <span>5 days</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>50</span><span>Classes</span></div>
+                        <div><span>24</span><span>Events</span></div>
+                        <div><span>36</span><span>House</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>321</span><span>Participants</span></div>
+                        <div><span>65</span><span>Facilitators</span></div>
+                        <div><span>29</span><span>Speakers</span></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="edit">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                        <span>Learning</span>
+                      </div>
+                    </td>
+                    <td class="view">
+                      <div>
+                        <span>Innovative Creative Learning</span>
+                      </div>
+                    </td>
+                    <td class="default">
+                      <div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                        <div>
+                          <span>
+                            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                          </span>
+                          <mat-form-field color="warn">
+                            <input matInput #subject placeholder="https://…" maxlength="50" value="">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <span></span>
+                        <div>
+                          <span>11/04/19 - 11/08/19</span>
+                          <span>5 days</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>50</span><span>Classes</span></div>
+                        <div><span>24</span><span>Events</span></div>
+                        <div><span>36</span><span>House</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <div>
+                        <div><span>321</span><span>Participants</span></div>
+                        <div><span>65</span><span>Facilitators</span></div>
+                        <div><span>29</span><span>Speakers</span></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

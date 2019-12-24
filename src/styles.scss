@@ -1,0 +1,341 @@
+ .mat-form-field-subscript-wrapper {
+   margin-top: -4.458333em;
+
+ }
+
+ // Custom Theming for Angular Material
+ // For more information: https://material.angular.io/guide/theming
+ @import '~@angular/material/theming';
+ // Plus imports for other components in your app.
+
+ // Include the common styles for Angular Material. We include this here so that you only
+ // have to load a single css file for Angular Material in your app.
+ // Be sure that you only ever include this mixin once!
+ @include mat-core();
+
+ // Define the palettes for your theme using the Material Design palettes available in palette.scss
+ // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+ // hue. Available color palettes: https://material.io/design/color/
+ $myapp-primary: mat-palette($mat-indigo);
+ $myapp-accent: mat-palette($mat-pink, A200, A100, A400);
+
+ // The warn palette is optional (defaults to red).
+ $myapp-warn: mat-palette($mat-red);
+
+ // Create the theme object (a Sass map containing all of the palettes).
+ $myapp-theme: mat-light-theme($myapp-primary, $myapp-accent, $myapp-warn);
+
+ // Include theme styles for core and each component used in your app.
+ // Alternatively, you can import and @include the theme mixins for each component
+ // that you are using.
+ @include angular-material-theme($myapp-theme);
+
+ /* You can add global styles to this file, and also import other style files */
+
+ html,
+ body {
+   height: 100%;
+   /* overflow: hidden !important;*/
+ }
+
+ body {
+   margin: 0;
+   font-family: Aial, "Helvetica Neue", sans-serif;
+ }
+
+ /* Over Writtable Angular material CSS */
+ div[panel-content] {
+   background-color: #fff;
+
+   .mat-tab-label {
+     min-width: 100px !important;
+     padding: 0;
+   }
+
+   mat-ink-bar {
+     width: 105px !important;
+     background-color: #00338D !important;
+   }
+ }
+
+
+ div[notification-create] {
+   display: flex;
+
+   div[collapsed="true"] {
+     /* display: none;*/
+     margin-right: -56%;
+
+
+   }
+
+   .mat-tab-body-wrapper {
+     /* width:60%;
+          margin: 0 20%;*/
+     background-color: #E5E5E5;
+     box-shadow: border-box;
+   }
+
+   mat-tab-group {
+     width: 100%;
+   }
+
+   background-color: #fff;
+   margin-top: 3px;
+
+   .mat-tab-label-content {
+     font-size: 16px;
+   }
+
+   .mat-ink-bar {
+     height: 5px !important;
+     background-color: #00338D !important;
+   }
+
+   mat-tab-header {
+     background-color: #fff;
+     padding-left: 20px;
+   }
+
+   .mat-form-field-subscript-wrapper {
+     margin-top: -3.458333em !important;
+
+   }
+
+   mat-chip-list {
+     span {
+       min-width: 7px;
+       font-size: 10px;
+       font-weight: 700;
+       /* height: 15px; */
+       background-color: #00338D;
+       padding: 3px 5px;
+       border-radius: 50%;
+       /* display: inline; */
+       color: #fff;
+       margin-left: 10px;
+       cursor: pointer;
+     }
+   }
+
+   .memeber-list {
+     display: flex;
+     justify-content: space-between;
+
+     >span {
+       font-size: 12px;
+       color: #888888;
+     }
+
+     div {
+       span:first-child {
+         max-width: 10px;
+         border: 2px solid #00338D;
+         border-radius: 50%;
+         padding: 0px 4px;
+         font-size: 14px;
+         font-weight: bold;
+         color: #00338D;
+         cursor: pointer;
+       }
+
+       span:last-child {
+         margin-left: 10px;
+         font-size: 14px;
+         font-weight: bold;
+         color: #00338D;
+         cursor: pointer;
+       }
+     }
+
+   }
+
+   .chips {
+     display: flex;
+     justify-content: space-between;
+
+     .mat-chip.mat-standard-chip {
+
+       color: rgb(0, 51, 141);
+     }
+
+
+     span:last-child {
+       margin-left: 10px;
+       color: #FFF;
+     }
+   }
+
+   .date {
+     i {
+       display: inline-block;
+       vertical-align: middle;
+       margin-right: 10px;
+       color: #00338D;
+       margin-left: 10px;
+     }
+   }
+
+   .last-row {
+     display: flex;
+     background-color: #E5E5E5;
+     width: 100%;
+     margin: 0 auto;
+     padding: 20px 10px;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+
+     input:first-child {
+       background: transparent;
+       border: 1px solid #00338d;
+       padding: 5px 20px;
+       min-width: 135px;
+       cursor: pointer;
+       color: #00338d;
+     }
+
+     input:last-child {
+       background: #00338d;
+       border: 0;
+       color: #fff;
+       margin-left: 15px;
+       min-width: 135px;
+       cursor: pointer;
+     }
+
+     input:nth-child(3) {
+       background: transparent;
+       border: 0;
+       color: #00338d;
+       cursor: pointer;
+       outline: 0;
+     }
+
+     span {
+       flex: 1 1 auto;
+     }
+   }
+
+   .first-row {
+     font-size: 20px;
+     color: #111111;
+     display: flex;
+     background-color: #E5E5E5;
+     width: 100%;
+     margin: 0 auto;
+     padding: 20px 0;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+   }
+
+   .date-row {
+     font-size: 20px;
+     color: #111111;
+     display: flex;
+     background-color: #E5E5E5;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+   }
+
+   .mat-tab-label-active {
+     font-weight: bold;
+     color: #00338D;
+     opacity: 1 !important;
+     font-size: 18px;
+   }
+
+   .mat-form-field-infix {
+     /* width:70%;*/
+   }
+ }
+
+ table {
+   width: 100%;
+   border-spacing: 0px 0.2rem;
+   background-color: #E5E5E5;
+
+   &[sticky] {
+     background-color: #fff !important;
+     position: sticky;
+     top: 0;
+     text-transform: uppercase;
+     color: #888888;
+     font-size: 13px;
+     font-weight: bold;
+     border: 2px solid #ddd;
+     border-left: 0;
+     border-right: 0;
+
+     th {
+       >i {
+         vertical-align: middle;
+         cursor: pointer;
+         color: #888888;
+
+         &.active {
+           transform: rotate(180deg);
+         }
+       }
+     }
+   }
+
+   thead,
+   tr {
+     background-color: #FFFFFF;
+   }
+ }
+
+ div[panel] {
+   div[collapse="false"] {
+     span[line] {
+       display: block;
+       border: 1.5px solid #ddd;
+     }
+
+     mat-tab-header {
+       padding-left: 0;
+     }
+   }
+ }
+
+ mat-tab-group {
+   +div {
+     /* width: 50px;*/
+
+     label {
+       display: none;
+     }
+   }
+
+   &:list {
+     +div {
+       width: 200px;
+
+       label {
+         display: block
+       }
+     }
+   }
+ }
+
+
+ div[notification-template] {
+   .mat-form-field-subscript-wrapper {
+     margin-top: 10px !important;
+   }
+
+   mat-hint {
+     color: rgba(0, 51, 141, 0.54) !important;
+     font-weight: bold;
+     font-size: 14px;
+   }
+ }
+
+ div[class-list] {
+   .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+     background-color: #00338D;
+   }
+ }

@@ -1,0 +1,617 @@
+<div class='page'>
+  <div class='leftNav'>
+    <div side-nav>
+      <div collapsed="false">
+        <div class="title">
+          <img alt="kpmg logo" class="dark-logo" src="assets/images/lakehouse-logo.svg" />
+          <div>
+            <img alt="kpmg logo" class="dark-logo" src="assets/images/kpmg-logo.svg" />
+            <span>Lakehouse</span>
+          </div>
+        </div>
+        <div>
+          <div main>
+            <ul>
+              <li>
+                <a routerLink="/admin/dashboard" routerLinkActive="active">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">local_library</i>
+                  <span>Programs</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/admin/participants" routerLinkActive="active">
+                  <i class="material-icons">group</i>
+                  <span>Participants</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">poll</i>
+                  <span>Reporting</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">settings</i>
+                  <span>Settings</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div collapsed="true">
+        <div class="title">
+          <label>Settings</label>
+          <button mat-button><i class="material-icons">close</i></button>
+        </div>
+        <div>
+          <div sub>
+            <ul>
+              <li>
+                <a routerLink="/admin/programs" routerLinkActive="active">Programs Dashboard</a>
+                <span>Upcoming Programs</span>
+              </li>
+              <li>
+                <span class="active">Innovative Creative Leaning</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>Business Enterprise Training</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>SAU Live</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+            </ul>
+            <!-- 
+                        <ul>
+                            <li><a routerLink="/admin/reporting" routerLinkActive="active">Reporting Dashboard</a></li>
+                            <li><a>Event Dashboard</a></li>
+                            <li><a>Flights</a></li>
+                            <li><a>Hotels</a></li>
+                            <li><a>Class Attendance</a></li>
+                            <li><a>Classroom Assignments</a></li>
+                            <li><a>Wellbeing Check</a></li>
+                        </ul> 
+                        -->
+            <!-- <ul>
+                            <li><a routerLink="/admin/settings" routerLinkActive="active">Settings Home</a></li>
+                            <li><a>User Access</a></li>
+                            <li><a>Notifications</a></li>
+                            <li><a>Global Mobile Settings</a></li>
+                            <li><a>Content Management</a></li>
+                        </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='center'>
+    <!-- 
+            add page header, dashboard summary, dashboard list here
+        -->
+    <div header>
+    <div breadcrums>
+        <ol class="Breadcrumb">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Dashboard
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Settings
+            </a>
+          </li>
+          <li class="Breadcrumb-item active">
+            <a class="Breadcrumb-link active" href="">
+              Notifications
+            </a>
+          <!--  <i class="material-icons">
+              arrow_drop_down
+            </i>-->
+          </li>
+        </ol>
+
+      </div>
+
+      <span class="spacer"></span>
+
+      <div class="user-group">
+        <span><i class="material-icons">search</i></span>
+        <span><i class="material-icons"> notifications </i><span></span></span>
+        <!-- <span><i class="material-icons">person_pin</i></span>-->
+        <span class="x"><span class="y"><span>MJ</span></span></span>
+        <span class="user">Marley Jones</span>
+        <span class="caret"></span>
+      </div>
+    </div>
+     <!--Participant Section-->
+    <div participants>
+      <h1>Participants</h1>
+
+    </div>
+    <!--Participant List Section-->
+    <div participants-list>
+      <div head>
+        <span><i class="material-icons">local_library</i></span>
+        <div>All Participants ( 870 )</div>
+        <div right-head>
+          <form search>
+           <input type="text" name="search" value=""
+             placeholder="Search participants by name or email">
+          </form>
+          <span><i class="material-icons"> search</i></span>
+          <span><i class="material-icons"> sort </i></span>
+        </div>
+      </div>
+      <table sticky>
+        <thead>
+          <th>
+            <span>Name</span>
+            <i class="material-icons"> arrow_drop_down</i>
+          </th>
+          <th>
+            <span>Email</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </th>
+          <th><span>phone</span>
+            <i class="material-icons"> arrow_drop_down</i>
+          </th>
+          <th>
+            <span>Programe</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </th>
+          <th>
+            <span>type</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </th>
+        </thead>
+      </table>
+
+      <table>
+
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+                
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+                
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+                  
+                </div>
+                
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+                
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span></span>
+                <span>Agu, Dede</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>deedeagu@kpmg.com</span>
+
+              </div>
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>882-631-2664</span>
+
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <div>
+                  <span>Innovative Creative Learning</span>
+                  <span>12/07/2019 - 20/07/2019</span>
+                </div>
+
+              </div>
+
+            </td>
+            <td>
+              <div>
+                Internal attendee
+              </div>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+

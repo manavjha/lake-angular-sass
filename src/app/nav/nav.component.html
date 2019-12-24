@@ -1,0 +1,741 @@
+<div class='page'>
+  <div class='leftNav'>
+    <div side-nav>
+      <div collapsed="false">
+        <div class="title">
+          <img alt="kpmg logo" class="dark-logo" src="assets/images/lakehouse-logo.svg" />
+          <div>
+            <img alt="kpmg logo" class="dark-logo" src="assets/images/kpmg-logo.svg" />
+            <span>Lakehouse</span>
+          </div>
+        </div>
+        <div>
+          <div main>
+            <ul>
+              <li>
+                <a routerLink="/admin/dashboard" routerLinkActive="active">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">local_library</i>
+                  <span>Programs</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/admin/participants" routerLinkActive="active">
+                  <i class="material-icons">group</i>
+                  <span>Participants</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">poll</i>
+                  <span>Reporting</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">settings</i>
+                  <span>Settings</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div collapsed="true">
+        <div class="title">
+          <label>Settings</label>
+          <button mat-button><i class="material-icons">close</i></button>
+        </div>
+        <div>
+          <div sub>
+            <ul>
+              <li>
+                <a routerLink="/admin/programs" routerLinkActive="active">Programs Dashboard</a>
+                <span>Upcoming Programs</span>
+              </li>
+              <li>
+                <span class="active">Innovative Creative Leaning</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>Business Enterprise Training</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>SAU Live</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+            </ul>
+            <!-- 
+                        <ul>
+                            <li><a routerLink="/admin/reporting" routerLinkActive="active">Reporting Dashboard</a></li>
+                            <li><a>Event Dashboard</a></li>
+                            <li><a>Flights</a></li>
+                            <li><a>Hotels</a></li>
+                            <li><a>Class Attendance</a></li>
+                            <li><a>Classroom Assignments</a></li>
+                            <li><a>Wellbeing Check</a></li>
+                        </ul> 
+                        -->
+            <!-- <ul>
+                            <li><a routerLink="/admin/settings" routerLinkActive="active">Settings Home</a></li>
+                            <li><a>User Access</a></li>
+                            <li><a>Notifications</a></li>
+                            <li><a>Global Mobile Settings</a></li>
+                            <li><a>Content Management</a></li>
+                        </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='center'>
+    <!-- 
+            add page header, dashboard summary, dashboard list here
+        -->
+    <div header>
+      <div breadcrums>
+        <ol class="Breadcrumb">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Dashboard
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Settings
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Notifications
+            </a>
+          </li>
+        </ol>
+      
+      </div>
+
+      <span class="spacer"></span>
+       
+       <div class="user-group">
+          <span><i class="material-icons">search</i></span>
+          <span><i class="material-icons"> notifications </i><span></span></span>
+         <!-- <span><i class="material-icons">person_pin</i></span>-->
+         <span class="x"><span class="y"><span>MJ</span></span></span>
+          <span class="user">Marley Jones</span>
+          <span class="caret"></span>
+      </div>
+    </div>
+<div container>
+  <div dashboard-summary>
+    <div user-caption>
+      <span FL>TODAY IN LAKE nona, FL</span>
+      <span>Welcome</span>
+      <div user>Marley</div>
+    </div>
+    <span spacer></span>
+    <div class="card">
+      <span><i class="material-icons">group</i></span>
+      <h4>Nov 4</h4>
+      <div>Wed <span>&#8226;</span> 2019</div>
+    </div>
+    <div class="card">
+      <span><i class="material-icons"> access_time </i></span>
+      <h4>10:15</h4>
+      <div>AM <span>&#8226;</span> EST</div>
+    </div>
+    <div class="card">
+      <span><i class="material-icons">wb_sunny</i></span>
+      <h4>77<span>&deg;F </span></h4>
+      <div>25 <span>&deg;C </span> <span>&#8226;</span> Sunny</div>
+    </div>
+
+  </div>
+  <div dashboard-list program-list>
+    <div>
+      <span><i class="material-icons">local_library</i></span>
+      <div>All Upcoming Lakehouse Programs</div>
+    </div>
+    <!--  <div sticky>
+        <div a>
+          <th>
+          <span>NAME</span>
+          <i class="material-icons"> arrow_drop_down</i>
+        </th>
+        </div>
+          
+        <div b>
+          <th>
+          <span>DATE</span>
+          <i class="material-icons">arrow_drop_down</i>
+          </th>
+        </div>
+        <div c>
+          <th><span>EVENTS</span>
+          <i class="material-icons"> arrow_drop_down</i></th></div>
+        <div d><th><span>PARTICIPANTS</span>
+          <i class="material-icons"> arrow_drop_down</i></th></div>
+
+      </div>-->
+    <table sticky>
+      <thead>
+        <th>
+          <span>Name</span>
+          <i class="material-icons"> arrow_drop_down</i>
+        </th>
+        <th>
+          <span>Date</span>
+          <i class="material-icons">arrow_drop_down</i>
+        </th>
+        <th><span>Events</span>
+          <i class="material-icons"> arrow_drop_down</i>
+        </th>
+        <th>
+          <span>Participants</span>
+          <i class="material-icons">arrow_drop_down</i>
+        </th>
+      </thead>
+    </table>
+
+    <table>
+
+      <!--  <thead class="sticky-1">
+          <th>
+            <span>Name</span>
+            <i class="material-icons"> arrow_drop_down</i>
+          </th>
+          <th>
+            <span>Date</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </th>
+          <th><span>Events</span>
+            <i class="material-icons"> arrow_drop_down</i>
+          </th>
+          <th>
+            <span>Participants</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </th>
+
+        </thead>-->
+
+      <tbody>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>24</span>
+                <span>Sessions</span>
+              </div>
+              <div>
+                <span>36</span>
+                <span>Activities</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>321</span>
+                <span>Attendees</span>
+              </div>
+              <div>
+                <span>65</span>
+                <span>Instructors</span>
+              </div>
+              <div>
+                <span>29</span>
+                <span>Speakers</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <span>Innovative Creative learing</span>
+              <span>Learnig</span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span>11/04/19 - 11/-8/19</span>
+              <span>5 days </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+              <div>
+                <span>50</span>
+                <span>Classes</span>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+    
+  </div>
+</div>

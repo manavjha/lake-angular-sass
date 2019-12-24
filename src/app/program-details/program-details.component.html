@@ -1,0 +1,1961 @@
+<div class="page">
+  <div class="leftNav">
+    <div side-nav>
+      <div collapsed="false">
+        <div class="title">
+          <img
+            alt="kpmg logo"
+            class="dark-logo"
+            src="assets/images/lakehouse-logo.svg"
+          />
+          <div>
+            <img
+              alt="kpmg logo"
+              class="dark-logo"
+              src="assets/images/kpmg-logo.svg"
+            />
+            <span>Lakehouse</span>
+          </div>
+        </div>
+        <div>
+          <div main>
+            <ul>
+              <li>
+                <a routerLink="/admin/dashboard" routerLinkActive="active">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">local_library</i>
+                  <span>Programs</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/admin/participants" routerLinkActive="active">
+                  <i class="material-icons">group</i>
+                  <span>Participants</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">poll</i>
+                  <span>Reporting</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">settings</i>
+                  <span>Settings</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div collapsed="true">
+        <div class="title">
+          <label>Settings</label>
+          <button mat-button><i class="material-icons">close</i></button>
+        </div>
+        <div>
+          <div sub>
+            <ul>
+              <li>
+                <a routerLink="/admin/programs" routerLinkActive="active"
+                  >Programs Dashboard</a
+                >
+                <span>Upcoming Programs</span>
+              </li>
+              <li>
+                <span class="active">Innovative Creative Leaning</span
+                ><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>Business Enterprise Training</span
+                ><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>SAU Live</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+            </ul>
+            <!-- 
+                        <ul>
+                            <li><a routerLink="/admin/reporting" routerLinkActive="active">Reporting Dashboard</a></li>
+                            <li><a>Event Dashboard</a></li>
+                            <li><a>Flights</a></li>
+                            <li><a>Hotels</a></li>
+                            <li><a>Class Attendance</a></li>
+                            <li><a>Classroom Assignments</a></li>
+                            <li><a>Wellbeing Check</a></li>
+                        </ul> 
+                        -->
+            <!-- <ul>
+                            <li><a routerLink="/admin/settings" routerLinkActive="active">Settings Home</a></li>
+                            <li><a>User Access</a></li>
+                            <li><a>Notifications</a></li>
+                            <li><a>Global Mobile Settings</a></li>
+                            <li><a>Content Management</a></li>
+                        </ul> -->
+          </div>
+        </div>
+      </div>
+      <div program>
+        <div container>
+          <div lists>
+            <span>Program Details</span>
+            <span>User Access</span>
+            <span>Content Management</span>
+            <span>Notifications</span>
+            <span>Settings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <!-- 
+            add page header, dashboard summary, dashboard list here
+        -->
+    <div header>
+      <div breadcrums>
+        <ol class="Breadcrumb">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Dashboard
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Settings
+            </a>
+          </li>
+          <li class="Breadcrumb-item active">
+            <a class="Breadcrumb-link active" href="">
+              Innovative Creative Learning (11/04/19 - 11/08/19)
+            </a>
+          </li>
+          <div parent-div>
+            <div breadcrum-popup open="false">
+              <span
+                ><a href="" class="disable"
+                  >Innovative Creative Learning (11/04/19 - 11/08/19)</a
+                ></span
+              >
+              <span
+                ><a href=""
+                  >Business Enterprise Training (11/06/19 - 11/09/19)</a
+                ></span
+              >
+              <span><a href="">SAU Live (11/11/19 - 11/15/19)</a></span>
+              <span><a href="">Partner Meeting (11/16/19 - 11/17/19)</a></span>
+            </div>
+          </div>
+        </ol>
+      </div>
+      <span class="spacer"></span>
+      <div class="user-group">
+        <span><i class="material-icons">search</i></span>
+        <span><i class="material-icons"> notifications </i><span></span></span>
+        <!-- <span><i class="material-icons">person_pin</i></span>-->
+        <span class="x"
+          ><span class="y"><span>MJ</span></span></span
+        >
+        <span class="user">Marley Jones</span>
+        <span class="caret"></span>
+      </div>
+    </div>
+    <!--Tab Control-->
+    <div creative-learning>
+      <h1>Innovative Creative Learning</h1>
+    </div>
+    <div overview-create>
+      <div class="tab-header" prog-detail-tab>
+        <div tab-head>
+          <span>Program Details</span>
+          <span><i class="material-icons">arrow_drop_down</i></span>
+        </div>
+      </div>
+      <mat-tab-group class="list">
+        <mat-tab label="Overview" class="tab-header">
+          <div class="tab-body">
+            <div overview>
+              <div overview-dashboard>
+                <div>
+                  <div>
+                    <div library>
+                      <i class="material-icons">local_library</i>
+                    </div>
+                    <div>
+                      <span>Mon, Nov 4 - Fri, Nov 8, 2019 </span>
+                      <span>5 Days Learning</span>
+                    </div>
+                  </div>
+                  <div>
+                    <span icl>Innovative Creative Learning</span>
+                  </div>
+                </div>
+                <div right-section>
+                  <div top-cards>
+                    <div>
+                      <span
+                        ><i class="material-icons"> import_contacts </i></span
+                      >
+                      <div>
+                        <span>50</span>
+                        <span>Classes</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <span><i class="material-icons"> local_play </i></span>
+                      <div>
+                        <span>24</span>
+                        <span>Sessions</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <span
+                        ><i class="material-icons">person_pin_circle </i></span
+                      >
+                      <div>
+                        <span>36</span>
+                        <span>House Activities</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div bottom-cards>
+                    <div>
+                      <span><i class="material-icons">person</i></span>
+                      <div>
+                        <span>321</span>
+                        <span>Attendees</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <span><i class="material-icons"> school </i></span>
+                      <div>
+                        <span>65</span>
+                        <span>Instructors</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <span><i class="material-icons"> mic </i></span>
+                      <div>
+                        <span>29</span>
+                        <span>Speakers</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div list-group>
+                <div>
+                  <span>J6NXYMYH3FD</span>
+                  <span>Cvent Event ID</span>
+                </div>
+                <div>
+                  <span>HMN9SGDKR4K</span>
+                  <span>Cvent RFP ID</span>
+                </div>
+                <div>
+                  <span>TAX-TF-01-14-2019</span>
+                  <span>Saba Program ID</span>
+                </div>
+                <div>
+                  <span>LOVE</span>
+                  <span>Hyatt Acronym</span>
+                </div>
+                <div>
+                  <span>264632200</span>
+                  <span>Hyatt Booking Ref No.</span>
+                </div>
+                <div>
+                  <span>5018795</span>
+                  <span>Concur Meeting Star ID</span>
+                </div>
+              </div>
+              <div view-mode>
+                <span>Schedule</span>
+                <span>4 Days Left</span>
+                <span spacer></span>
+                <span><i class="material-icons">search</i></span>
+                <span><i class="material-icons">filter_list</i></span>
+                <span divider></span>
+                <span><i class="material-icons">view_comfy</i></span>
+                <span><i class="material-icons">view_headline</i></span>
+              </div>
+              <div date-timeline>
+                <div date-header>
+                  <span>DAY 1 OF 5</span>
+                  <span> &#8226; </span>
+                  <span>MON, NOV 4, 2019</span>
+                </div>
+                <div date-popup open="false">
+                  <div>
+                    <span>Day 2 of 5</span> <span>&nbsp; &#9679; &nbsp;</span>
+                    <span>Mon, Nov 5, 2019</span>
+                  </div>
+                  <div>
+                    <span>Day 3 of 5</span> <span>&nbsp; &#9679; &nbsp; </span>
+                    <span>Mon, Nov 6, 2019</span>
+                  </div>
+                  <div>
+                    <span>Day 4 of 5</span> <span>&nbsp; &#9679; &nbsp; </span>
+                    <span>Mon, Nov 7, 2019</span>
+                  </div>
+                  <div>
+                    <span>Day 5 of 5</span> <span>&nbsp; &#9679; &nbsp;</span>
+                    <span>Mon, Nov 8, 2019</span>
+                  </div>
+                </div>
+                <!--Members Popup Start-->
+                <div members-popup>
+                  <div top>
+                    <div><span>Select Members</span></div>
+                    <div>
+                      <div>
+                        <form search="">
+                          <input
+                            name="search"
+                            placeholder="Search by program, class, name or email"
+                            type="text"
+                            value=""
+                          />
+                        </form>
+                        <span><i class="material-icons"> search</i></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div list class="active">
+                    <div>
+                      <mat-checkbox
+                        color="primary"
+                        checked="true"
+                      ></mat-checkbox>
+                    </div>
+
+                    <div>
+                      <span>Innovative Creative Learning</span>
+                      <span>Program</span>
+                    </div>
+                    <div>
+                      <div>
+                        <span
+                          ><i class="material-icons">
+                            keyboard_arrow_right</i
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div list>
+                    <div>
+                      <mat-checkbox color="primary"></mat-checkbox>
+                    </div>
+
+                    <div>
+                      <span>Business Enterprise Training</span>
+                      <span>Program</span>
+                    </div>
+                    <div>
+                      <div>
+                        <span
+                          ><i class="material-icons">
+                            keyboard_arrow_right</i
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div list>
+                    <div>
+                      <mat-checkbox color="primary"></mat-checkbox>
+                    </div>
+
+                    <div>
+                      <span>SAU Live</span>
+                      <span>Program</span>
+                    </div>
+                    <div>
+                      <div>
+                        <span
+                          ><i class="material-icons">
+                            keyboard_arrow_right</i
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div list>
+                    <div>
+                      <mat-checkbox color="primary"></mat-checkbox>
+                    </div>
+
+                    <div>
+                      <span>Partner Meeting</span>
+                      <span>Program</span>
+                    </div>
+                    <div>
+                      <div>
+                        <span
+                          ><i class="material-icons">
+                            keyboard_arrow_right</i
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div space>
+                    <div>
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <div bottom>
+                    <div class=" chips">
+                      <span><i class="material-icons"> expand_less</i></span>
+                      <span select>1 Selected</span>
+                      <div chips>
+                        <mat-chip-list>
+                          <mat-chip
+                            ><span>Innovative Creative Learning</span
+                            ><span>X</span></mat-chip
+                          >
+                        </mat-chip-list>
+                        
+                        
+                      </div>
+                    </div>
+                    <div class="last-row">
+                      <input
+                        type="button"
+                        name="Save as Draft"
+                        value="Save as Draft"
+                      />
+                      <span></span>
+                      <input type="button" name="Cancel" value="Cancel" />
+                      <input type="button" name="Done" value="Done" />
+                    </div>
+                  </div>
+                </div>
+                <!--Members Popup End-->
+              </div>
+              <div level>
+                <span>Morning Session</span>
+              </div>
+              <div card-section-morning>
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> assignment_ind </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Registration & Breakfast</span></div>
+                    <div>
+                      <span>8:00 AM - 9:00 AM </span><span>&#8226;</span>
+                      <span>Main Dining Hall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> local_library </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Welcome & Introduction</span></div>
+                    <div>
+                      <span>9:00 AM - 9:30 AM </span><span>&#8226;</span>
+                      <span>Central Auditorium</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> local_play </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Keynote: Lorem Ipsum by Lorem Ipsu… </span></div>
+                    <div>
+                      <span>9:30 AM - 10:30 AM </span><span>&#8226;</span>
+                      <span>Central Auditorium</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> local_library </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Break</span></div>
+                    <div><span>10:30 AM - 10:45 AM </span></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> import_contacts </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Intro to Tax for the Digital Age</span></div>
+                    <div>
+                      <span>10:45 AM - 12:30 PM </span><span>&#8226;</span>
+                      <span>Classroom 190B</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> import_contacts </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Intro to False Assurance</span></div>
+                    <div>
+                      <span>10:45 AM - 12:30 PM </span><span>&#8226;</span>
+                      <span>Classroom 210A</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div level>
+                <span>Afternoon Session</span>
+              </div>
+              <div card-section-morning>
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> restaurant </i></span>
+                  </div>
+                  <div b>
+                    <div><span>Lunch</span></div>
+                    <div>
+                      <span>12:30 PM - 1:30 PM </span><span>&#8226;</span>
+                      <span>Main Dining Hall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span><i class="material-icons"> local_play</i></span>
+                  </div>
+                  <div b>
+                    <div><span>Advisory Milestones</span></div>
+                    <div>
+                      <span>1:30 PM - 2:30 PM </span><span>&#8226;</span>
+                      <span>East Auditorium</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons active">
+                        import_contacts
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div>
+                      <span class="active">Tax for the Digital Age I</span>
+                    </div>
+                    <div>
+                      <span>1:30 PM - 4:15 PM </span><span>&#8226;</span>
+                      <span>Classroom 190B</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons active">
+                        import_contacts
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">False Assurance I</span></div>
+                    <div>
+                      <span>1:30 PM - 4:15 PM </span><span>&#8226;</span>
+                      <span>Classroom 210A</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_library </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Break</span></div>
+                    <div><span>4:15 PM - 4:30 PM </span></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green">
+                        person_pin_circle
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Women in Business</span></div>
+                    <div>
+                      <span>4:30 PM - 6:30 PM </span><span>&#8226;</span>
+                      <span>Red Room 20</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_play </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Strategy in Tech</span></div>
+                    <div>
+                      <span>4:30 PM - 6:00 PM </span><span>&#8226;</span>
+                      <span>Red Room 12</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green">
+                        import_contacts
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div>
+                      <span class="active">Tax for the Digital Age I</span>
+                    </div>
+                    <div>
+                      <span>4:30 PM - 6:00 PM </span><span>&#8226;</span>
+                      <span>Classroom 190B</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green">
+                        import_contacts
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">False Assurance I</span></div>
+                    <div>
+                      <span>4:30 PM - 6:00 PM </span><span>&#8226;</span>
+                      <span>Classroom 210A</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div level>
+                <span>Evening Session</span>
+              </div>
+              <div card-section-morning>
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> restaurant </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Dinner</span></div>
+                    <div>
+                      <span>6:00 PM - 7:00 PM </span><span>&#8226;</span>
+                      <span>Main Dining Hall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_play </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Audit and Security</span></div>
+                    <div>
+                      <span>7:00 PM - 7:45 PM </span><span>&#8226;</span>
+                      <span>Red Room 13</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_play </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Bank Internal Audit</span></div>
+                    <div>
+                      <span>7:00 PM - 7:45 PM </span><span>&#8226;</span>
+                      <span>Red Room 14</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_library </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Break</span></div>
+                    <div><span>7:45 PM - 8:00 PM </span></div>
+                  </div>
+                </div>
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green">
+                        person_pin_circle
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Late Night Yoga</span></div>
+                    <div>
+                      <span>8:00 PM - 9:00 PM </span><span>&#8226;</span>
+                      <span>Activity Room 7</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green">
+                        person_pin_circle
+                      </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Network and Dessert</span></div>
+                    <div>
+                      <span>8:00 PM - 9:00 PM </span><span>&#8226;</span>
+                      <span>Main Dining Hall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div a>
+                    <span
+                      ><i class="material-icons green"> local_play </i></span
+                    >
+                  </div>
+                  <div b>
+                    <div><span class="active">Action-Based Learning</span></div>
+                    <div>
+                      <span>8:00 PM - 9:00 PM</span><span>&#8226;</span>
+                      <span>East Auditorium</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div overview-list>
+                <h4>Afternoon Session</h4>
+                <div card-list>
+                  <div>
+                    <div icon><span><i class="material-icons"> restaurant </i></span></div>
+                    <span>Lunch</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span> &#8226; </span>
+                      <span>Main Dining Hall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list>
+                  <div>
+                    <div icon><span><i class="material-icons"> local_play </i></span></div>
+                    <span>Advisory Milestones</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span> &#8226; </span>
+                      <span> East Auditorium</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list>
+                  <div>
+                    <div icon><span><i class="material-icons"> import_contacts </i></span></div>
+                    <span class="active">Tax for the Digital Age I</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span> &#8226; </span>
+                      <span>Classroom 190B</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list>
+                  <div>
+                    <div icon><span><i class="material-icons"> import_contacts </i></span></div>
+                    <span class="active">False Assurance I</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span> &#8226; </span>
+                      <span> Classroom 210A</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list class="active">
+                  <div>
+                    <div icon class="active"><span><i class="material-icons"> local_library </i></span></div>
+                    <span class="active">Break</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list class="active">
+                  <div>
+                    <div icon class="active"><span><i class="material-icons"> person_pin_circle </i></span></div>
+                    <span class="active">Women in Business</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span>Red Room 20</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list class="green">
+                  <div>
+                    <div icon class="green"><span><i class="material-icons"> local_play </i></span></div>
+                    <span class="active">Strategy in Tech</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span>Red Room 12</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list class="green">
+                  <div>
+                    <div icon class="green"><span><i class="material-icons"> import_contacts </i></span></div>
+                    <span class="active">Tax for the Digital Age I</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span> Classroom 190B</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div card-list class="green">
+                  <div>
+                    <div icon class="green"><span><i class="material-icons">import_contacts </i></span></div>
+                    <span class="active">False Assurance I</span>
+                    <div>
+                      <span>12:30 PM - 2:30 PM </span>
+                      <span>Classroom 210A</span>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+
+              <!-- <div search-container>
+                <div Search-header>
+                  <div>Header</div>
+                </div>
+                <div search-list>
+                  <div class="force-overflow">
+                    <div>_class end time_</div>
+                    <div>_class name_</div>
+                    <div>_class start time_</div>
+                    <div>_classroom location_</div>
+                    <div>_flight airline name_</div>
+                    <div>_fligh arrival time_</div>
+                    <div>_flight departure time_</div>
+                    <div>_hotel check-intime_</div>
+                    <div>_hotel chck-out time_</div>
+                    <hr>
+                    <div>_class end time_</div>
+                    <div>_class name_</div>
+                    <div>_class start time_</div>
+                    <div>_classroom location_</div>
+                    <div>_flight airline name_</div>
+                    <div>_fligh arrival time_</div>
+                    <div>_flight departure time_</div>
+                    <div>_hotel check-intime_</div>
+                    <div>_hotel chck-out time_</div>
+                    <hr>
+                    <div>_class end time_</div>
+                    <div>_class name_</div>
+                    <div>_class start time_</div>
+                    <div>_classroom location_</div>
+                    <div>_flight airline name_</div>
+                    <div>_fligh arrival time_</div>
+                    <div>_flight departure time_</div>
+                    <div>_hotel check-intime_</div>
+                    <div>_hotel chck-out time_</div>
+                  </div>
+
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Classes" class="tab-header">
+          <div class="tab-body">
+            <div classes>
+              <!-- After Mat tab group -->
+              <div panel-list>
+                <div Class-list>
+                  <div head mode="open">
+                    <!--    Initially hidden Section     -->
+                    <div left>
+                      <input
+                        type="text"
+                        placeholder="Search classes by name, ID, or location"
+                      />
+                      <span spacer></span>
+                      <span><i class="material-icons">search</i></span>
+                    </div>
+                    <div right>
+                      <span><i class="material-icons">settings</i></span>
+                      <span>Class Setting Mode</span>
+                      <span><i class="material-icons">clear</i></span>
+                    </div>
+                    <!--    Initially hidden Section     -->
+
+                    <span><i class="material-icons">local_library</i></span>
+                    <div>Classes ( 50 )</div>
+                    <div right-head>
+                      <form search>
+                        <input
+                          type="text"
+                          name="search"
+                          value=""
+                          placeholder="Search participants by name or email"
+                        />
+                      </form>
+                      <span><i class="material-icons"> search</i></span>
+                      <span><i class="material-icons"> sort </i></span>
+                    </div>
+                    <div close>
+                      <span
+                        ><i class="material-icons"> navigate_before</i></span
+                      >
+                      <span><i class="material-icons"> settings </i></span>
+                    </div>
+                  </div>
+
+                  <table mode="view">
+                    <thead>
+                      <th class="edit">
+                        <span>Status</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Class Name</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Class ID</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="view">
+                        <div>
+                          <div>
+                            <span>Class Name</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>Class ID</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="edit">
+                        <span>Date</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Start / end time</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Location</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+
+                      <th class="edit">
+                        <span>Attendees</span>
+                      </th>
+                      <th class="last-view">
+                        <div>
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>Facilitator Attendance</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+
+                          <div dwell>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>Class Dwell Time</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="disable edit">
+                          <div>
+                            <span></span>
+                            <span class="gray">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="red edit">
+                          <div>
+                            <span></span>
+                            <span class="alert">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="green edit">
+                          <div>
+                            <span></span>
+                            <span class="active">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Sessions" class="tab-header">
+          <div class="tab-body">
+            <div session>
+              <!-- After Mat tab group -->
+              <div panel-list>
+                <div Class-list>
+                  <div head mode="open">
+                    <!--    Initially hidden Section     -->
+                    <div left>
+                      <input
+                        type="text"
+                        placeholder="Search sessions by name or ID"
+                      />
+                      <span spacer></span>
+                      <span><i class="material-icons">search</i></span>
+                    </div>
+                    <div right>
+                      <span><i class="material-icons">settings</i></span>
+                      <span>Class Setting Mode</span>
+                      <span><i class="material-icons">clear</i></span>
+                    </div>
+                    <!--    Initially hidden Section     -->
+
+                    <span><i class="material-icons">local_library</i></span>
+                    <div>Sessions ( 24 )</div>
+                    <div right-head>
+                      <form search>
+                        <input
+                          type="text"
+                          name="search"
+                          value=""
+                          placeholder="Search participants by name or email"
+                        />
+                      </form>
+                      <span><i class="material-icons"> search</i></span>
+                      <span><i class="material-icons"> sort </i></span>
+                    </div>
+                    <div close>
+                      <span
+                        ><i class="material-icons"> navigate_before</i></span
+                      >
+                      <span><i class="material-icons"> settings </i></span>
+                    </div>
+                  </div>
+
+                  <table mode="view">
+                    <thead>
+                      <th class="edit">
+                        <span>Status</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Session Name</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Session ID</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="view">
+                        <div>
+                          <div>
+                            <span>Session Name</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>Session ID</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="edit">
+                        <span>Date</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Start / end time</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Location</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+
+                      <th class="edit">
+                        <span>Attendees</span>
+                      </th>
+                      <th class="last-view">
+                        <div>
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <span>Session QA</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="disable edit">
+                          <div>
+                            <span></span>
+                            <span class="gray">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Strategy in Tech</span>
+                            <span>Non-Learning</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Tax for the Digital Age I</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <!--  <span>
+                              <mat-checkbox class="example-margin"></mat-checkbox>
+                            </span>-->
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="disable edit">
+                          <div>
+                            <span></span>
+                            <span class="gray">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Audit and Security</span>
+                            <span>Non-Learning</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Bank Internal Audit</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <!--  <span>
+                                <mat-checkbox class="example-margin"></mat-checkbox>
+                                 </span>-->
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="green edit">
+                          <div>
+                            <span></span>
+                            <span class="active">20 Mins Left</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Bank Internal Audit</span>
+                            <span>Non-Learning</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>262071</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Bank Internal Audit</span>
+                            <span>262071</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>
+                              <mat-checkbox
+                                class="example-margin"
+                              ></mat-checkbox>
+                            </span>
+                            <!--  <span>
+                                <mat-checkbox class="example-margin"></mat-checkbox>
+                                 </span>-->
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">date_range</i></span
+                            >
+                            <div>
+                              <span>Nov 4, 2019</span>
+                              <span>Monday</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">access_time</i></span
+                            >
+                            <div>
+                              <span>1:30 PM - </span>
+                              <span>4:15 PM EST</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span
+                              ><i class="material-icons">location_on</i></span
+                            >
+                            <span>Classroom 190B </span>
+                          </div>
+                        </td>
+
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Facilitators</span>
+                              <span>Participants</span>
+                            </div>
+                            <div>
+                              <span>2 </span>
+                              <span>54</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Registration Status" class="tab-header">
+          <div class="tab-body">
+            <div registration-status>
+              <!-- After Mat tab group -->
+              <div panel-list>
+                <div registration-list>
+                  <div head mode="open">
+                    <!--    Initially hidden Section     -->
+                    <div left>
+                      <input
+                        type="text"
+                        placeholder="Search sessions by name or ID"
+                      />
+                      <span spacer></span>
+                      <span><i class="material-icons">search</i></span>
+                    </div>
+                    <div right>
+                      <span><i class="material-icons">hotel</i></span>
+                      <section>
+                        <span>Hotel Waitlist</span>
+                        <span
+                          >Innovative Creative Learning (11/04/19 - 11/08/19) •
+                          Max Capacity: 400</span
+                        >
+                      </section>
+
+                      <span>
+                        <button class="disable">Cancel</button>
+                        <button class="disable">Submit</button>
+                        <i class="material-icons">clear</i></span
+                      >
+                    </div>
+                    <!--    Initially hidden Section     -->
+
+                    <span><i class="material-icons">local_library</i></span>
+                    <div>Registration Status ( 415 )</div>
+                    <div right-head>
+                      <form search>
+                        <input
+                          type="text"
+                          name="search"
+                          value=""
+                          placeholder="Search participants by name or email"
+                        />
+                      </form>
+                      <span><i class="material-icons"> search</i></span>
+                      <span><i class="material-icons"> sort </i></span>
+                    </div>
+                    <div close>
+                      <span>
+                        <i class="material-icons"> navigate_before</i></span
+                      >
+                      <span>
+                        <i class="material-icons"> hotel </i>
+                      </span>
+                    </div>
+                  </div>
+                  <table mode="view">
+                    <thead>
+                      <th class="edit">
+                        <span>Name</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Email</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Flight To</span>
+                        <i class="material-icons"> arrow_drop_down</i>
+                      </th>
+                      <th class="view">
+                        <div>
+                          <div>
+                            <span>Name</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>Email</span>
+                            <i class="material-icons"> arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="edit">
+                        <span>Flight from</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Hotel Status</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+                      <th class="edit">
+                        <span>Course / Session Status</span>
+                        <i class="material-icons">arrow_drop_down</i>
+                      </th>
+
+                      <th class="last-view">
+                        <div>
+                          <div>
+                            <span>Start Date</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>End Date</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>Room Type</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                          <div>
+                            <span>Date Added</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                          </div>
+                        </div>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="name edit">
+                          <div>
+                            <span></span>
+                            <span>Agu, Deede</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Booked</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Smith, John</span>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Standard</span>
+                            <span><span>Mon, Nov 4, 2019 </span></span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Booked</span>
+                          </div>
+                        </td>
+                        <td class="  edit status">
+                          <div>
+                            <span class="reserved">Reserved</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Registered</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="name edit">
+                          <div>
+                            <span></span>
+                            <span>Agu, Deede</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Booked</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Masterson, Sandra</span>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Standard</span>
+                            <span><span>Mon, Nov 4, 2019 </span></span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Booked</span>
+                          </div>
+                        </td>
+                        <td class="  edit status">
+                          <div>
+                            <span class="unreserved">Not Reserved</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Registered</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="name edit">
+                          <div>
+                            <span></span>
+                            <span>Agu, Deede</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <div>
+                              <span>Booked</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="view">
+                          <div>
+                            <span>Hunter, Marc</span>
+                            <span>deedeagu@kpmg.com</span>
+                          </div>
+                        </td>
+                        <td class="default">
+                          <div>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Mon, Nov 4, 2019 </span>
+                            <span>Standard</span>
+                            <span><span>Mon, Nov 4, 2019 </span></span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Booked</span>
+                          </div>
+                        </td>
+                        <td class="  edit status">
+                          <div>
+                            <span class="gray">Error</span>
+                          </div>
+                        </td>
+                        <td class="edit">
+                          <div>
+                            <span>Registered</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <!--program-setting Tab-->
+
+        <!--Program setting Tab-->
+      </mat-tab-group>
+      <div panel>
+        <div toggle>
+          <span><i class="material-icons">chevron_right</i></span>
+          <span><i class="material-icons">message</i></span>
+          <span>All Ad-Hoc Notifications</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

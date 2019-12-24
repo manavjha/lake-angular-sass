@@ -1,0 +1,414 @@
+body {
+  margin: 0px !important;
+  overflow: hidden;
+}
+
+div[side-nav] {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div[side-nav] > div {
+  border-right: 1.5px solid #E5E5E5;
+  background: white;
+  width: 213px;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div[side-nav] > div:nth-child(1) > .title {
+  background-color: #0000FF;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div[side-nav] > div:nth-child(1) > .title > img {
+  width: 56px;
+  height: 29px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+div[side-nav] > div:nth-child(1) > .title > div > img {
+  width: 37px;
+  height: 15px;
+}
+
+div[side-nav] > div:nth-child(1) > .title > div > span {
+  display: block;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+div[side-nav] > div:nth-child(1)[collapsed="true"] {
+  width: 80px;
+}
+
+div[side-nav] > div:nth-child(1)[collapsed="true"] > .title > div {
+  display: none;
+}
+
+div[side-nav] > div:nth-child(1)[collapsed="true"] > div a > span {
+  display: none;
+}
+
+div[side-nav] > div:nth-child(1)[collapsed="true"] + div[collapsed="false"] {
+  left: 80px;
+}
+
+div[side-nav] > div:nth-child(2) {
+  display: none;
+  /* position: absolute;*/
+  left: 213px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 10px 0 rgba(87, 43, 43, 0.12);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 10px 0 rgba(87, 43, 43, 0.12);
+}
+
+div[side-nav] > div:nth-child(2) > .title {
+  height: 70px;
+  border-bottom: 1.5px solid #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+}
+
+div[side-nav] > div:nth-child(2) > .title > label {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+div[side-nav] > div:nth-child(2) > div {
+  padding-left: 25px;
+}
+
+div[side-nav] > div:nth-child(2) > div a {
+  color: #0000ff;
+}
+
+div[side-nav] > div:nth-child(2)[collapsed="false"] {
+  display: block;
+}
+
+div[side-nav] ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* padding-left: 25px;*/
+  padding-left: 0;
+}
+
+div[side-nav] li {
+  margin: 38px 0;
+}
+
+div[side-nav] li:hover {
+  /* opacity: 0.5; */
+}
+
+div[side-nav] li span ~ a {
+  display: none;
+}
+
+div[side-nav] li span.active {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #00f;
+}
+
+div[side-nav] li span.active ~ a {
+  display: block;
+  padding: 10px 0px;
+}
+
+div[side-nav] li span:hover {
+  color: #0000FF;
+}
+
+div[side-nav] li span.active + i + span {
+  color: #888888;
+}
+
+div[side-nav] li > a {
+  color: #111111;
+  font-family: arial;
+  font-size: 16px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div[side-nav] li > a i:last-child:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+div[side-nav] li > a span {
+  margin-right: 15px;
+  min-width: 80px;
+}
+
+div[side-nav] li > a > i {
+  margin-right: 15px;
+  margin-left: 15px;
+  opacity: 0.3;
+}
+
+div[side-nav] li > a > i:hover {
+  opacity: 0.5;
+}
+
+div[side-nav] li > a:hover {
+  color: #0000FF;
+  opacity: 1;
+}
+
+div[side-nav] li:hover {
+  cursor: pointer;
+}
+
+div[sub] {
+  /*  >span:not(.active){
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #00f;
+      min-width: 225px;
+    }
+    >span + i{
+      display: inline-block;
+      vertical-align: middle;
+    }*/
+}
+
+div[sub] ul li {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+div[sub] ul li span + span {
+  display: block;
+  margin-top: 5px;
+  color: #888888;
+  font-size: 14px;
+}
+
+div[sub] ul li > span {
+  min-width: 230px;
+  display: inline-block;
+}
+
+div[sub] ul li i + span {
+  color: #888888;
+  font-size: 14px;
+  display: block;
+}
+
+div[side-nav] > div:nth-child(1)[collapsed=true] ul li a i:last-child {
+  display: none;
+}
+
+/*Manu.J stylying*/
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .center {
+  width: 100%;
+}
+
+.page div[header] {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.page div[dashboard-list] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-top: 4px solid #00f;
+}
+
+.page div[dashboard-list] th, .page div[dashboard-list] td {
+  width: 100px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.page div[dashboard-list] th span, .page div[dashboard-list] td span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #888888;
+}
+
+.page div[dashboard-list] th i, .page div[dashboard-list] td i {
+  vertical-align: middle;
+  cursor: pointer;
+  color: #888888;
+}
+
+.page div[dashboard-list] th i.active, .page div[dashboard-list] td i.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.page div[dashboard-list] tr, .page div[dashboard-list] thead {
+  -webkit-box-shadow: -2px 7px 12px -12px rgba(0, 0, 0, 0.75);
+          box-shadow: -2px 7px 12px -12px rgba(0, 0, 0, 0.75);
+}
+
+.page div[dashboard-list] > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page div[dashboard-list] > div > span {
+  margin-right: 15px;
+}
+
+.page div[dashboard-list] > div span + div {
+  color: #111111;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page div[dashboard-summary] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #00f;
+}
+
+.page div[dashboard-summary] > div[user-caption] {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 48px;
+  width: 17%;
+  color: #fff;
+}
+
+.page div[dashboard-summary] > div[user-caption] div[user] {
+  color: #fff;
+}
+
+.page div[dashboard-summary] span + div.card {
+  border-top-left-radius: 20px;
+  margin-right: 10px;
+}
+
+.page div[dashboard-summary] span + div.card + div {
+  margin-right: 10px;
+}
+
+.page div[dashboard-summary] span + div.card + div + div {
+  border-bottom-right-radius: 20px;
+}
+
+.page div[dashboard-summary] span[spacer] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.page div[dashboard-summary] .card {
+  width: 150px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+ul.user-group li span {
+  font-size: 16px;
+}
+
+ul.user-group li {
+  list-style: none;
+}
+
+ul.user-group {
+  padding-left: 15px;
+}
+
+ul.user-group li .mat-icon {
+  vertical-align: middle;
+}
+
+ul.user-group li span.user {
+  color: #111111 !important;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 18px;
+  vertical-align: middle;
+  border-top: 6px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.component.css.map */
+
+
+
+
+
+

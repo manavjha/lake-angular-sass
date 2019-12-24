@@ -1,0 +1,965 @@
+<div class='page'>
+  <div class='leftNav'>
+    <div side-nav>
+      <div collapsed="false">
+        <div class="title">
+          <img alt="kpmg logo" class="dark-logo" src="assets/images/lakehouse-logo.svg" />
+          <div>
+            <img alt="kpmg logo" class="dark-logo" src="assets/images/kpmg-logo.svg" />
+            <span>Lakehouse</span>
+          </div>
+        </div>
+        <div>
+          <div main>
+            <ul>
+              <li>
+                <a routerLink="/admin/dashboard" routerLinkActive="active">
+                  <i class="material-icons">dashboard</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">local_library</i>
+                  <span>Programs</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/admin/participants" routerLinkActive="active">
+                  <i class="material-icons">group</i>
+                  <span>Participants</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">poll</i>
+                  <span>Reporting</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="material-icons">settings</i>
+                  <span>Settings</span>
+                  <i class="material-icons">navigate_next</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div collapsed="true">
+        <div class="title">
+          <label>Settings</label>
+          <button mat-button><i class="material-icons">close</i></button>
+        </div>
+        <div>
+          <div sub>
+            <ul>
+              <li>
+                <a routerLink="/admin/programs" routerLinkActive="active">Programs Dashboard</a>
+                <span>Upcoming Programs</span>
+              </li>
+              <li>
+                <span class="active">Innovative Creative Leaning</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>Business Enterprise Training</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+              <li>
+                <span>SAU Live</span><i class="material-icons"> expand_less </i>
+                <span>11/04/19 - 11/06/19</span>
+                <a>Program Details</a>
+                <a>User Access</a>
+                <a>Content Management</a>
+                <a>Notifications</a>
+                <a>Settings</a>
+              </li>
+            </ul>
+            <!-- 
+                        <ul>
+                            <li><a routerLink="/admin/reporting" routerLinkActive="active">Reporting Dashboard</a></li>
+                            <li><a>Event Dashboard</a></li>
+                            <li><a>Flights</a></li>
+                            <li><a>Hotels</a></li>
+                            <li><a>Class Attendance</a></li>
+                            <li><a>Classroom Assignments</a></li>
+                            <li><a>Wellbeing Check</a></li>
+                        </ul> 
+                        -->
+            <!-- <ul>
+                            <li><a routerLink="/admin/settings" routerLinkActive="active">Settings Home</a></li>
+                            <li><a>User Access</a></li>
+                            <li><a>Notifications</a></li>
+                            <li><a>Global Mobile Settings</a></li>
+                            <li><a>Content Management</a></li>
+                        </ul> -->
+          </div>
+        </div>
+      </div>
+      <div program>
+        <div container>
+          <div head>
+            <span>Program Details</span>
+            <span><i class="material-icons">arrow_drop_down</i></span>
+          </div>
+          <div lists>
+            <span>Program Details</span>
+            <span>User Access</span>
+            <span>Content Management</span>
+            <span>Notifications</span>
+            <span>Settings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='center'>
+    <!-- 
+            add page header, dashboard summary, dashboard list here
+        -->
+    <div header>
+      <div breadcrums>
+        <ol class="Breadcrumb">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Dashboard
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="">
+              Settings
+            </a>
+          </li>
+          <li class="Breadcrumb-item active">
+            <a class="Breadcrumb-link active" href="">
+              Notifications
+            </a>
+          </li>
+          <div>
+            <div>
+              bredcrum
+            </div>
+          </div>
+        </ol>
+
+      </div>
+
+      <span class="spacer"></span>
+
+      <div class="user-group">
+        <span><i class="material-icons">search</i></span>
+        <span><i class="material-icons"> notifications </i><span></span></span>
+        <!-- <span><i class="material-icons">person_pin</i></span>-->
+        <span class="x"><span class="y"><span>MJ</span></span></span>
+        <span class="user">Marley Jones</span>
+        <span class="caret"></span>
+      </div>
+    </div>
+    <!--Tab Control-->
+    <div notification>
+      <h1>Notifications</h1>
+    </div>
+    <div Notification-create>
+      <mat-tab-group class="list">
+        <mat-tab label="Ad-Hoc Notification" class="tab-header">
+          <div class="tab-body">
+
+            <form>
+              <div class="first-row">New Message</div>
+              <div class="msg-body">
+                <div class="tab-container">
+                  <mat-form-field>
+                    <input matInput #subject placeholder="Subject" maxlength="50" value="">
+                    <mat-hint align="end">{{subject.value.length}} / 50</mat-hint>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="msg-body">
+                <div class="tab-container">
+                  <mat-form-field>
+                    <input matInput #message placeholder="Message" maxlength="150" value="">
+                    <mat-hint align="end">{{message.value.length}} / 150</mat-hint>
+                  </mat-form-field>
+
+                </div>
+
+              </div>
+
+              <div class="date-row date">
+                <div>
+                  <i class="material-icons">
+                    date_range
+                  </i>
+                  <mat-form-field>
+
+                    <input matInput [matDatepicker]="picker" value="7/24/2019" placeholder="Date">
+                    <mat-datepicker-toggle matSuffix [for]="picker">
+                      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+
+                </div>
+                <div>
+
+                  <i class="material-icons">
+                    access_time
+                  </i>
+                  <mat-form-field>
+                    <input matInput atp-time-picker value="" placeholder="Time">
+                    <mat-datepicker-toggle matSuffix [for]="picker1">
+                      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+
+                </div>
+              </div>
+
+              <div class="msg-body memeber-list">
+                <span>Members List</span>
+                <div>
+                  <span>+</span>
+                  <span>Select Members</span>
+                </div>
+
+              </div>
+              <div class="msg-body chips">
+                <mat-chip-list>
+                  <mat-chip>Innovative Creative Learning<span>X</span></mat-chip>
+                </mat-chip-list>
+
+              </div>
+              <div class="last-row">
+
+                <input type="button" name="Save as Draft" value="Save as Draft">
+                <span></span>
+                <input type="button" name="Cancel" value="Cancel">
+                <input type="button" name="Submit" value="Submit">
+
+
+              </div>
+            </form>
+            <!--  <div right-panel>
+             
+              <div panel-content>
+                <mat-tab-group>
+                  <mat-tab label="Upcoming">
+                   <div upcoming>
+                      <div><span>Lorem Ipsum Decor</span></div>
+                      <div><span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum
+                          Decor
+                          Lorem Ipsum Decor</span>
+                      </div>
+                      <div date-row>
+                        <div>
+                          <span>
+                            <i class="material-icons"> date_range </i>
+                          </span>
+                          <span>Nov 4, 2019</span>
+                        </div>
+
+                        <div>
+                          <span>
+                            <i class="material-icons"> date_range </i>
+                          </span>
+                          <span>Nov 4, 2019</span>
+                        </div>
+                      </div>
+                      <div class="msg-body memeber-list">
+                        <div><span>+</span><span>Show Members List</span></div>
+                        <span>sent by Marley Jones</span>
+                      </div>
+                    </div>
+
+                  </mat-tab>
+                  <mat-tab label="Sent"> Content 2 </mat-tab>
+                  <mat-tab label="Draft"> Content 3 </mat-tab>
+
+                </mat-tab-group>
+                
+              </div>
+            </div>-->
+
+          </div>
+
+
+        </mat-tab>
+        <mat-tab label="Notification Template" class="tab-header">
+          <div class="tab-body">
+            <div notification-template>
+              <div head>
+                <span></span>
+                <div>All Notification Templates ( 36 )</div>
+                <div right-head>
+                  <form search>
+                    <input type="text" name="search" value="" placeholder="Search templates">
+                  </form>
+                  <span><i class="material-icons"> search</i></span>
+                  <span></span>
+                </div>
+              </div>
+              <table sticky>
+                <thead>
+                  <th>
+                    <span>Type</span>
+                    <i class="material-icons"> arrow_drop_down</i>
+                  </th>
+                  <th>
+                    <span>Message</span>
+                  </th>
+                  <th><span>target</span>
+                    <i class="material-icons"> arrow_drop_down</i>
+                  </th>
+                </thead>
+              </table>
+              <table>
+                <tbody collapse="false" class="collapse">
+                  <tr firstrow>
+                    <td>
+                      <div>
+                        Class Start
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div edit>Lorem Ipsum _participant name_ dolor sit amet, consectetur _class start
+                          time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh.</div>
+                        <mat-form-field class="example-full-width edit-mode">
+                          <textarea matInput #message maxlength="256" placeholder=""
+                            value="Lorem Ipsum _participant name_  dolor sit amet, consectetur _class start time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh."></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                        <div class="edit-mode" insert>
+                          <span>+</span>
+                          <span>Insert Variable</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span>Class Details</span>
+                        <span><i class="material-icons">expand_more</i></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by Liz Porter <span>&#8226;</span> Nov 3, 2019 <span>&#8226;</span> 3:22 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-change>
+                        <input name="Cancel" type="button" value="Cancel">
+                        <input name="Submit" type="button" value="Save Changes">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody open collapse="false">
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by marley Jones <span>&#8226;</span> Nov 3, 2019 <span>&#8226;</span> 4:28 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-success>
+                        <input name="Cancel" type="button" value="Undo">
+                        <span>Saved Successfully</span>
+                        <span><i class="material-icons">check_circle_outline </i></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <table>
+                <tbody collapse="false" class="collapse">
+                  <tr firstrow>
+                    <td>
+                      <div>
+                        Class Start
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div edit>Lorem Ipsum _participant name_ dolor sit amet, consectetur _class start
+                          time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh.</div>
+                        <mat-form-field class="example-full-width edit-mode">
+                          <textarea matInput #message maxlength="256" placeholder=""
+                            value="Lorem Ipsum _participant name_  dolor sit amet, consectetur _class start time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh."></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                        <div class="edit-mode" insert>
+                          <span>+</span>
+                          <span>Insert Variable</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span>Class Details</span>
+                        <span><i class="material-icons">expand_more</i></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by Liz Porter . Nov 3, 2019 . 3:22 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-change>
+                        <input name="Cancel" type="button" value="Cancel">
+                        <input name="Submit" type="button" value="Save Changes">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody open collapse="false">
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by marley Jones . Nov 3, 2019 . 4:28 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-success>
+                        <input name="Cancel" type="button" value="Undo">
+                        <span>Saved Successfully</span>
+                        <span><i class="material-icons">check_circle_outline </i></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <tbody collapse="false" class="collapse">
+                  <tr firstrow>
+                    <td>
+                      <div>
+                        Class Start
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div edit>Lorem Ipsum _participant name_ dolor sit amet, consectetur _class start
+                          time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh.</div>
+                        <mat-form-field class="example-full-width edit-mode">
+                          <textarea matInput #message maxlength="256" placeholder=""
+                            value="Lorem Ipsum _participant name_  dolor sit amet, consectetur _class start time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh."></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                        <div class="edit-mode" insert>
+                          <span>+</span>
+                          <span>Insert Variable</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span>Class Details</span>
+                        <span><i class="material-icons">expand_more</i></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by Liz Porter . Nov 3, 2019 . 3:22 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-change>
+                        <input name="Cancel" type="button" value="Cancel">
+                        <input name="Submit" type="button" value="Save Changes">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody open collapse="false">
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by marley Jones . Nov 3, 2019 . 4:28 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-success>
+                        <input name="Cancel" type="button" value="Undo">
+                        <span>Saved Successfully</span>
+                        <span><i class="material-icons">check_circle_outline </i></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <tbody collapse="false" class="collapse">
+                  <tr firstrow>
+                    <td>
+                      <div>
+                        Class Start
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div edit>Lorem Ipsum _participant name_ dolor sit amet, consectetur _class start
+                          time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh.</div>
+                        <mat-form-field class="example-full-width edit-mode">
+                          <textarea matInput #message maxlength="256" placeholder=""
+                            value="Lorem Ipsum _participant name_  dolor sit amet, consectetur _class start time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh."></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                        <div class="edit-mode" insert>
+                          <span>+</span>
+                          <span>Insert Variable</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span>Class Details</span>
+                        <span><i class="material-icons">expand_more</i></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by Liz Porter . Nov 3, 2019 . 3:22 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-change>
+                        <input name="Cancel" type="button" value="Cancel">
+                        <input name="Submit" type="button" value="Save Changes">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody open collapse="false">
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by marley Jones . Nov 3, 2019 . 4:28 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-success>
+                        <input name="Cancel" type="button" value="Undo">
+                        <span>Saved Successfully</span>
+                        <span><i class="material-icons">check_circle_outline </i></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+
+                <tbody collapse="false" class="collapse">
+                  <tr firstrow>
+                    <td>
+                      <div>
+                        Class Start
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div edit>Lorem Ipsum _participant name_ dolor sit amet, consectetur _class start
+                          time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh.</div>
+                        <mat-form-field class="example-full-width edit-mode">
+                          <textarea matInput #message maxlength="256" placeholder=""
+                            value="Lorem Ipsum _participant name_  dolor sit amet, consectetur _class start time_ sdfd gdsgdgf dhdfhdf. Dfghdfhfhfh gdh hdhdhdhdh."></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                        <div class="edit-mode" insert>
+                          <span>+</span>
+                          <span>Insert Variable</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span>Class Details</span>
+                        <span><i class="material-icons">expand_more</i></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by Liz Porter . Nov 3, 2019 . 3:22 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-change>
+                        <input name="Cancel" type="button" value="Cancel">
+                        <input name="Submit" type="button" value="Save Changes">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody open collapse="false">
+                  <tr secondrow class="edit-mode">
+                    <td>
+                      <span>
+                        Last updated by marley Jones . Nov 3, 2019 . 4:28 PM
+                      </span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div save-success>
+                        <input name="Cancel" type="button" value="Undo">
+                        <span>Saved Successfully</span>
+                        <span><i class="material-icons">check_circle_outline </i></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+      <div panel>
+        <!--  <div panel-header collapsable="false">
+          <span>
+            <i class="material-icons">chevron_right</i>
+          </span>
+          <span>
+            <i class="material-icons">message</i>
+          </span>
+          <span>All Ad-Hoc Notifications</span>
+      
+        </div>-->
+
+        <div toggle>
+          <span><i class="material-icons">chevron_right</i></span>
+          <span><i class="material-icons">message</i></span>
+          <span>All Ad-Hoc Notifications</span>
+        </div>
+
+
+        <!--  <div panel-content collapse="false">
+            <mat-tab-group>
+              <mat-tab label="Upcoming">
+                <div upcoming>
+                  <div><span>Lorem Ipsum Decor</span></div>
+                  <div second><span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum r</span>
+                  </div>
+                  <div date-row>
+                    <div>
+                      <span>
+                        <i class="material-icons"> date_range </i>
+                      </span>
+                      <mat-form-field>
+                      
+                        <input matInput [matDatepicker]="picker4" value="7/24/2019" placeholder="Date">
+                        <mat-datepicker-toggle matSuffix [for]="picker4">
+                          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #picker4></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+          
+                    <div>
+                      <span>
+                        <i class="material-icons"> access_time </i>
+                      </span>
+                      <mat-form-field>
+                      
+                        <input matInput [matDatepicker]="picker5" value="7/24/2019" placeholder="Time">
+                        <mat-datepicker-toggle matSuffix [for]="picker5">
+                          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #picker5></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="msg-body memeber-list">
+                    <div><span>+</span><span>Show Members List</span></div>
+                    <span>Scheduled by Marley Jones</span>
+                  </div>
+                </div>
+                <span line></span>
+                <div upcoming>
+                  <div><span>Lorem Ipsum Decor</span></div>
+                  <div second><span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum r</span>
+                  </div>
+                  <div date-row>
+                    <div>
+                      <span>
+                        <i class="material-icons"> date_range </i>
+                      </span>
+                      <mat-form-field>
+                
+                        <input matInput [matDatepicker]="picker6" value="7/24/2019" placeholder="Date">
+                        <mat-datepicker-toggle matSuffix [for]="picker6">
+                          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #picker6></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                
+                    <div>
+                      <span>
+                        <i class="material-icons"> access_time </i>
+                      </span>
+                      <mat-form-field>
+                
+                        <input matInput [matDatepicker]="picker7" value="7/24/2019" placeholder="Time">
+                        <mat-datepicker-toggle matSuffix [for]="picker7">
+                          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #picker7></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="msg-body memeber-list">
+                    <div><span>+</span><span>Show Members List</span></div>
+                    <span>Scheduled by Marley Jones</span>
+                  </div>
+                </div>
+          
+              </mat-tab>
+              <mat-tab label="Sent"> 
+                <div upcoming>
+                  <div><span>Lorem Ipsum Decor</span></div>
+                  <div second><span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor </span>
+                  </div>
+                  <div date-row>
+                    <div>
+                      <span>
+                        <i class="material-icons"> date_range </i>
+                      </span>
+                      <span>Nov 4, 2019</span>
+                    </div>
+                
+                    <div>
+                      <span>
+                        <i class="material-icons"> date_range </i>
+                      </span>
+                      <span>Nov 4, 2019</span>
+                    </div>
+                  </div>
+                  <div class="msg-body memeber-list">
+                    <div><span>+</span><span>Show Members List</span></div>
+                    <span>Sent by Marley Jones</span>
+                  </div>
+                </div>
+              </mat-tab>
+              <mat-tab label="Draft"> 
+                
+              <div upcoming>
+                <div ><span>Lorem Ipsum Decor</span></div>
+                <div second><span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor</span>
+                </div>
+                <div date-row>
+                  <div>
+                    <span>
+                      <i class="material-icons"> date_range </i>
+                    </span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+              
+                  <div>
+                    <span>
+                      <i class="material-icons"> date_range </i>
+                    </span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+                </div>
+                <div class="msg-body memeber-list">
+                  <div><span>+</span><span>Show Members List</span></div>
+                  <span>Draft by Marley Jones</span>
+                </div>
+              </div>
+              </mat-tab>
+          
+            </mat-tab-group>
+          
+          </div>-->
+        <div notification-list>
+          <mat-tab-group>
+            <mat-tab label="Upcoming">
+              <div notification>
+                <div title>
+                  <div>
+                    <form>
+                      <!-- <input type="text" value="Editable content !!" />-->
+                    </form>
+                    <span>Lorem Ipsum Decor</span>
+                  </div>
+                  <span><i class="material-icons">delete</i></span>
+                </div>
+                <div details>
+                  <span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor</span>
+                </div>
+                <div date>
+                  <div>
+                    <span><i class="material-icons">date_range</i></span>
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker4" value="7/24/2019" placeholder="Date">
+                      <mat-datepicker-toggle matSuffix [for]="picker4">
+                        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                      </mat-datepicker-toggle>
+                      <mat-datepicker #picker4></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <span><i class="material-icons">access_time</i></span>
+                    <mat-form-field>
+                      <input matInput atp-time-picker value="" placeholder="Time">
+                      <mat-datepicker-toggle matSuffix [for]="picker5">
+                        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                      </mat-datepicker-toggle>
+                      <mat-datepicker #picker5></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div memeber-list>
+                  <div>
+                    <span>+</span>
+                    <span>Manage Members List</span>
+                  </div>
+                  <span>Scheduled by Marley Jones</span>
+                </div>
+              </div>
+              <div notification>
+                <div title>
+                  <div>
+                    <form>
+                      <!-- <input type="text" value="Editable content !!" />-->
+                    </form>
+                    <span>Lorem Ipsum Decor</span>
+                  </div>
+                  <span><i class="material-icons">delete</i></span>
+                </div>
+                <div details>
+                  <span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor</span>
+                </div>
+                <div date>
+                  <div>
+                    <span><i class="material-icons">date_range</i></span>
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker7" value="7/24/2019" placeholder="Date">
+                      <mat-datepicker-toggle matSuffix [for]="picker7">
+                        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                      </mat-datepicker-toggle>
+                      <mat-datepicker #picker7></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <span><i class="material-icons">access_time</i></span>
+                    <mat-form-field>
+                      <input matInput atp-time-picker value="" placeholder="Time">
+                      <mat-datepicker-toggle matSuffix [for]="picker6">
+                        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                      </mat-datepicker-toggle>
+                      <mat-datepicker #picker6></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div memeber-list>
+                  <div>
+                    <span>+</span>
+                    <span>Manage Members List</span>
+                  </div>
+                  <span>Scheduled by Marley Jones</span>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Sent">
+              <div notification-sent>
+                <div title>
+                  <div>
+                    <span>Lorem Ipsum Decor</span>
+                  </div>
+                  <span><i class="material-icons">delete</i></span>
+
+                </div>
+                <div details>
+                  <span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor</span>
+                </div>
+                <div date>
+                  <div>
+                    <span><i class="material-icons">date_range</i></span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+                  <div>
+                    <span><i class="material-icons">access_time</i></span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+                </div>
+                <div memeber-list>
+                  <div>
+                    <span>+</span>
+                    <span>Show Members List</span>
+                  </div>
+                  <span>Sent by Marley Jones</span>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Draft">
+              <div notification>
+                <div title>
+                  <span>Lorem Ipsum Decor</span>
+                </div>
+                <div details>
+                  <span>Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor Lorem Ipsum Decor</span>
+                </div>
+                <div date>
+                  <div>
+                    <span><i class="material-icons">date_range</i></span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+                  <div>
+                    <span><i class="material-icons">date_range</i></span>
+                    <span>Nov 4, 2019</span>
+                  </div>
+                </div>
+                <div memeber-list>
+                  <div>
+                    <span>+</span>
+                    <span>Show Members List</span>
+                  </div>
+                  <span>Sent by Marley Jones</span>
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
